@@ -1,17 +1,43 @@
 {
   "name": "pi-guideline-loader",
   "version": "0.1.0",
-  "description": "Automatically loads CLAUDE.md and AGENTS.md guidelines based on CWD and session interaction history.",
+  "description": "Automatically loads CLAUDE.md and AGENTS.md guidelines based on CWD and session interaction history for pi agent.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "pi": {
     "extensions": ["./src/index.ts"]
   },
-  "dependencies": {
-    "@mariozechner/pi-coding-agent": "workspace:*"
+  "keywords": [
+    "pi",
+    "pi-extension",
+    "ai-agent",
+    "llm",
+    "context-management",
+    "monorepo",
+    "guidelines"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylebrodeur/pi-guideline-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kylebrodeur/pi-guideline-loader/issues"
+  },
+  "homepage": "https://github.com/kylebrodeur/pi-guideline-loader",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "^0.65.0"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "@mariozechner/pi-coding-agent": "^0.65.0"
   }
 }
