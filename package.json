@@ -1,0 +1,17 @@
+{
+  "name": "pi-guideline-loader",
+  "version": "0.1.0",
+  "description": "Automatically loads CLAUDE.md and AGENTS.md guidelines based on CWD and session interaction history.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "dependencies": {
+    "@mariozechner/pi-coding-agent": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
